@@ -1,0 +1,10 @@
+
+.container{
+  background-image: url("https://wallpapers.com/images/high/star-wars-space-background-1920-x-1080-f1o3qr8zm0z4662c.webp"); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
