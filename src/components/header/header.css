@@ -2,3 +2,9 @@
     color: rgba(255, 204, 2, 0.938);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media(max-width: 450px){
+    .header{
+        text-align: center;
+    }
+}

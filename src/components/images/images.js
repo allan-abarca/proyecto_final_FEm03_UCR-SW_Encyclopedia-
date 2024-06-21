@@ -1,7 +1,7 @@
-import "./card.css"
+import "./images.css"
 import { useEffect, useState } from "react";
 
-const Card = (props)=>{
+const Image = (props)=>{
 
     const {cardValue, menuType} = props;
 
@@ -34,12 +34,8 @@ const Card = (props)=>{
         const {character} = props;
 
         return(
-            <div className="card">
-                <h2>{character.name}</h2>
-                <p>Altura: {character.height} cm</p>
-                <p>Peso: {character.mass} kg</p>
-                <p>Año de nacimiento: {character.birth_year}</p>
-                <p>Género: {character.gender}</p>
+            <div className="image-container">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/Star-Wars-Skywalker-Saga-Cropped.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="Characters image"></img>
             </div>
         )
     };
@@ -49,13 +45,8 @@ const Card = (props)=>{
         const {planet} = props;
 
         return(
-            <div className="card">
-                <h2>{planet.name}</h2>
-                <p>Clima: {planet.climate}</p>
-                <p>Diámetro: {planet.diameter}</p>
-                <p>Periodo orbital: {planet.orbital_period}</p>
-                <p>Población: {planet.population}</p>
-                <p>Terreno: {planet.terrain}</p>
+            <div className="image-container">
+                <img src="https://reviewsyouread.wordpress.com/wp-content/uploads/2021/03/10-more-star-wars-planets-as-countries.png?w=1200" alt="Planets image"></img>
             </div>
         )
     };
@@ -65,21 +56,13 @@ const Card = (props)=>{
         const {starship} = props;
 
         return(
-            <div className="card">
-                <h2>{starship.name}</h2>
-                <p>Pasajeros: {starship.passengers} seres</p>
-                <p>Tripulación: {starship.crew} seres</p>
-                <p>Cpacidad de carga: {starship.cargo_capacity}</p>
-                <p>Clase de la nave: {starship.starship_class}</p>
-                <p>Costo en créditos: {starship.cost_in_credits}</p>
-                <p>Longitud: {starship.length}</p>
-                <p>Modelo: {starship.model}</p>
-                <p>Clasificación de hipervelocidad: {starship.hyperdrive_rating}</p>
+            <div className="image-container">
+                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/07/Star-Wars-Space-Battle-Header-Cropped.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="Starships image"></img>
             </div>
         )
     };
 
-    const CardTemplate = (props)=>{
+    const ImageTemplate = (props)=>{
 
         const {values} = props;
 
@@ -96,8 +79,8 @@ const Card = (props)=>{
     }
 
     return(
-        <CardTemplate values={items}/>
+        <ImageTemplate values={items}/>
     )
 };
 
-export default Card;
+export default Image;

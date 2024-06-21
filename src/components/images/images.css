@@ -1,0 +1,15 @@
+.image-container{
+    border: solid 1px rgba(255, 204, 2, 0.938);
+    border-radius: 8px;
+    margin: 20px 5px;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img{
+    width: 100%;
+    /* height: auto; */
+    border-radius: 8px;
+}
